@@ -8,6 +8,8 @@ A collection of Javascript node-based abstract data structures (ADTs) that use i
 
 #### Usage example
 ```javascript
+const MyNode = require ('./src/linkedlist');
+
 const printList = list => {
     for (let n of list) {
         console.log(n.getValue());

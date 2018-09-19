@@ -14,7 +14,7 @@ const printList = list => {
     for (let n of list) {
         console.log(n.getValue());
     }
-}
+};
 
 /// Example 1
 let l1 = new MyNode(1),

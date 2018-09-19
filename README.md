@@ -46,5 +46,13 @@ printList(l2);
 // 30
 // ...
 
-// [...l2]
-// Using spread syntax (...list) will expand each _node_. This behavior can be modified in the class if desired.
+// Example 3
+// Using spread syntax (...list) will expand each _node_. This can be taken advantage of for array methods:
+[...l2].forEach(node => console.log(node.getValue());
+// 10
+// 20
+// 30
+// ...
+
+[...l2].map(node => node.getValue());
+// [10,20,30,40 ... ]

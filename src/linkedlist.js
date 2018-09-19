@@ -19,7 +19,7 @@ module.exports  = class MyNode {
                 n = n.next;
                 return {
                     value: cur,
-                    done: (false)
+                    done: false
                 }
             }
         }

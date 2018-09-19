@@ -1,4 +1,4 @@
-export class MyNode {
+module.exports  = class MyNode {
     constructor(value, next) {
         this.value = value;
         this.next = next || null;
@@ -49,7 +49,7 @@ export class MyNode {
     getValue() {
         return this.value;
     }
-}
+};
 
 /* Examples
 

@@ -1,7 +1,7 @@
 module.exports  = class MyNode {
-    constructor(value, next) {
+    constructor(value = null, next = null) {
         this.value = value;
-        this.next = next || null;
+        this.next = next;
     }
 
     [Symbol.iterator]() {

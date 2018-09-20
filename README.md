@@ -34,11 +34,10 @@ printList(l1);
 
 // Example 2
 let l2 = new MyNode(10);
-// setNext() returns the node we set as next for easy chaining.
-// It can also either take a node, or a value. If given a value, it creates the node
+
+// Set next can either take a node, or a value. If given a value, it creates the node
 [20, 30, 40, 50, 60, 70, 80, 90, 100]
-    .reduce((a, x) => a.setNext(x), l2);
-// equivalent to l2.setNext(20).setNext(30).setNext(40) ...
+    .reduce((a, x) => a.setNext(x).next, l2);
 
 printList(l2);
 // 10

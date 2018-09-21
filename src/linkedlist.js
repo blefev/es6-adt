@@ -30,13 +30,12 @@ module.exports  = class MyNode {
 	}
 
     setNext(val) {
-        let ret;
         if (val instanceof MyNode) {
             this.next = val;
         } else {
             this.next = new MyNode(val);
         }
-		return this;
+	return this;
     }
 
     getNext() {

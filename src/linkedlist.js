@@ -25,9 +25,9 @@ module.exports  = class MyNode {
         }
     }
 
-	add(val) {
-		return this.setNext(val);
-	}
+    add(val) {
+	return this.setNext(val);
+    }
 
     setNext(val) {
         if (val instanceof MyNode) {
